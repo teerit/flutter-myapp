@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/info_card.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+const url = 'https://github.com/teerit';
+const email = 'teeritploensin@gmail.com';
+const phone = '+66 86 388 2670';
+const location = 'Bangkok, Thailand';
 
 void main() {
   runApp(const MyApp());
@@ -51,6 +57,22 @@ class Home extends StatelessWidget {
               child: Divider(
                 color: Colors.teal.shade700,
               ),
+            ),
+            InfoCard(
+              text: phone,
+              icon: Icons.phone,
+            ),
+            InfoCard(
+              text: email,
+              icon: Icons.email,
+            ),
+            InfoCard(
+              text: url,
+              icon: Icons.web,
+            ),
+            InfoCard(
+              text: location,
+              icon: Icons.location_city,
             ),
           ],
         ),
